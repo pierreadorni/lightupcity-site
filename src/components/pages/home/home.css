@@ -28,6 +28,37 @@
     background: radial-gradient(circle at calc(50vw + 90px) calc(50vh + 30px),var(--vert) 1%, rgba(0,0,0,0) 5%);
 }
 
+.section-footer{
+    position: absolute;
+    top: calc(100vh - 100px);
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--vert);
+}
+.section-footer h2{
+    font-family: Sura, serif;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.section-footer img{
+    animation: hover 5s infinite linear;
+}
+
+@keyframes hover{
+    0%{
+        transform: translateY(-3px);
+    }
+    50%{
+        transform: translateY(+3px);
+    }
+    100%{
+        transform: translateY(-3px);
+    }
+}
+
 @keyframes glow {
     0%{
         opacity: 1;
