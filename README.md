@@ -1,70 +1,90 @@
-# Getting Started with Create React App
+# Compiègne en Lumière 2022
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ceci est le repo github du site web de Compiègne en Lumière 2022, codé en utilisant le framework **React**. 
 
-## Available Scripts
+1. [Normes](#normes)
+2. [Atomic Design](#atomic-design)
+3. [Utilisation](#utilisation)
 
-In the project directory, you can run:
+## Normes
+Ce projet utilise ESLint pour suivre la norme Javascript [Airbnb](https://github.com/airbnb/javascript). <br/>
+Executez `npm run lint` ou paramétrez votre IDE pour lancer le lint automatiquement:
+ - [VSCode](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+ - [WebStorm](https://www.jetbrains.com/help/webstorm/eslint.html#ws_js_eslint_verify_code)
 
-### `npm start`
+Les noms de fichiers suivent une nomenclature particulière:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+|            | **.css**  | **.jsx**   | **dossier** |
+|------------|-----------|------------|-------------|
+| **UI/**    | camelCase | PascalCase | camelCase   |
+| **pages/** | camelCase | PascalCase | PascalCase  |
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+le nom de dossier et de fichier étant le nom du component exporté dans le .jsx.
+par exemple: 
+```
+.
+└── home
+    ├── Home.jsx
+    └── home.css
+```
+*<p style="text-align: center;">Dossier du component Home</p>*
+```jsx
+import React from 'react'
 
-### `npm test`
+function Home() {
+  return <h1> Ceci est la page d&apos;accueil !</h1>
+}
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+export default Home
+```
+*<p style="text-align: center;">Home.jsx</p>*
 
-### `npm run build`
+## Atomic Design
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+L'UI du site suivra l'organisation Atomic Design, chaque section du site étant un *Organism*.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+pour comprendre l'Atomic Design:
+ - [site officiel](https://bradfrost.com/blog/post/atomic-web-design/)
+ - [openclassrooms](https://openclassrooms.com/fr/courses/5249021-initiez-vous-a-la-methode-atomic-design/5630171-decouvrez-l-atomic-design)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Utilisation
 
-### `npm run eject`
+Ce projet a été créé en utilisant [Create React App](https://github.com/facebook/create-react-app).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Commandes disponibles
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+À la racine du projet, vous pouvez lancer :
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+`npm start`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Lance l'application en mode développement.\
+Ouvrez [http://localhost:3000](http://localhost:3000) pour la voir dans votre navigateur.
 
-## Learn More
+Cette page se rafraîchira automatiquement quand vous ferez des changements.\
+Vous pourrez aussi voir les erreurs de *lint* dans la console.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+`npm run build`
 
-### Code Splitting
+Construit l'application pour la production dans le dossier `build`.\
+Cela empaquette correctement React pour la production et optimise le build pour les meilleures performances.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Le build est minifié et les noms de fichiers incluent les hash.\
+Votre app est prête à être déployée !
 
-### Analyzing the Bundle Size
+Lisez la section à propos du [déploiement](https://facebook.github.io/create-react-app/docs/deployment) pour plus d'informations.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+`npm run eject`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+**Note: ceci est une opération irréversible. Une fois que vous avez exécuté `eject`, il n'y a plus de retour en arrière !**
 
-### Advanced Configuration
+Si vous n'êtes pas satisfait de l'outil de build et des choix de configuration, vous pouvez exécuter `eject` à tout moment. La commande va supprimer la dépendance de build unique de votre projet.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+À la place, la commande va copier tous les fichiers de configuration et les dépendances transitives (webpack, Babel, ESLint, etc.) directement dans votre projet pour que vous ayez un contrôle total sur elles. Toutes les commandes sauf `eject` continueront de fonctionner, mais elles pointeront vers les scripts copiés pour que vous puissiez les modifier à vote guise. Vous serez alors indépendant.
 
-### Deployment
+Vous n'êtes absolument pas obligé de lancer `eject`. Les fonctionalités de base conviennent pour des petits et moyens déploiements, et vous ne devez pas vous sentir obligé d'utiliser cette fonctionalité.
+Cependant nous comprenons que cet outil ne serait pas aussi utile si vous ne pouviez pas le customiser lorsque  vous y êtes prêt.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
