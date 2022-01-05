@@ -1,0 +1,42 @@
+.landing-section{
+    background: var(--noir);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.star-glow-wrap{
+    position: absolute;
+    animation: glow 10s infinite linear;
+}
+
+.star-glow-wide{
+    height: 100vh;
+    width: 100vw;
+    opacity: 0.3;
+    background: radial-gradient(circle at calc(50vw + 90px) calc(50vh + 30px),var(--vert) 1%, rgba(0,0,0,0) 90%);
+}
+
+.star-glow{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    opacity: 0.8;
+    background: radial-gradient(circle at calc(50vw + 90px) calc(50vh + 30px),var(--vert) 1%, rgba(0,0,0,0) 5%);
+}
+
+
+@keyframes glow {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

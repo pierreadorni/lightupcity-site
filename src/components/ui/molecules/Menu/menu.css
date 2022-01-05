@@ -1,0 +1,68 @@
+.menu-content{
+    position:fixed;
+    top:0;
+    left:0;
+    height:100vh;
+    width:100vw;
+    background-color:rgba(0,0,0,0.8);
+    z-index:1;
+    display:none;
+    flex-direction: row;
+}
+
+.menu-left{
+    flex: 1;
+    display: flex;
+    flex-direction:column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 50px;
+
+}
+.menu-right{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.menu-right svg{
+    margin:0;
+}
+
+.circle{
+    position: absolute;
+    left: 20px;
+    z-index:2;
+}
+.bar{
+    position: absolute;
+    left: 25px;
+    z-index:1;
+}
+
+.one{
+    top: calc(50vh - 30px);
+}
+.two{
+    top: calc(50vh + 20px);
+}
+
+.menu-content h3{
+    color: var(--rouge);
+    font-family: Sura, sans-serif;
+    text-align: left;
+    width: 150px;
+    text-decoration: underline;
+    text-decoration-color: white;
+    line-height:0;
+    margin:0;
+}
+
+.visible{
+    display: flex;
+}
+
+.actif{
+    color: var(--vert)!important;
+}
