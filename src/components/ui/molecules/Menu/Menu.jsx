@@ -14,10 +14,6 @@ function Menu() {
   }
 
   useEffect(() => {
-    console.log(`active changed : ${active}`)
-  }, [active])
-
-  useEffect(() => {
     window.addEventListener('scroll', handleScroll)
   }, [])
 

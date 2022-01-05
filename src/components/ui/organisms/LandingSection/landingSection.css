@@ -1,5 +1,4 @@
 .landing-section{
-    background: var(--noir);
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -28,15 +27,42 @@
     background: radial-gradient(circle at calc(50vw + 90px) calc(50vh + 30px),var(--vert) 1%, rgba(0,0,0,0) 5%);
 }
 
+#pieuvre{
+    position: absolute;
+    top: 70vh;
+    left: 10vw;
+    animation: squid-hover 10s infinite ease-in-out;
+}
+
+#lune{
+    position: absolute;
+    top: 5vh;
+    left: calc(80vw - 100px);
+}
 
 @keyframes glow {
     0%{
+        opacity: 0;
+    }
+    30%{
         opacity: 1;
     }
-    50%{
+    60%{
         opacity: 0;
     }
     100%{
-        opacity: 1;
+        opacity: 0;
+    }
+}
+
+@keyframes squid-hover{
+    0%{
+        transform: translateY(-30px);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(-30px);
     }
 }
