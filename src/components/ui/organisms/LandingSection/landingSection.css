@@ -9,7 +9,7 @@
 
 .star-glow-wrap{
     position: absolute;
-    animation: glow 10s infinite linear;
+    animation: glow 10s infinite ease-in-out;
 }
 
 .star-glow-wide{
@@ -44,10 +44,10 @@
     0%{
         opacity: 0;
     }
-    30%{
+    40%{
         opacity: 1;
     }
-    60%{
+    80%{
         opacity: 0;
     }
     100%{
@@ -64,5 +64,24 @@
     }
     100%{
         transform: translateY(-30px);
+    }
+}
+
+@media only screen and (min-width: 500px){
+    #lune{
+        width: 200px;
+    }
+    #pieuvre{
+        width: 200px;
+        top: 50vh;
+    }
+    #logo{
+        width: 300px;
+    }
+    .star-glow{
+        background: radial-gradient(circle at calc(50vw + 115px) calc(50vh + 35px),var(--vert) 1%, rgba(0,0,0,0) 5%);
+    }
+    .star-glow-wide{
+        background: radial-gradient(circle at calc(50vw + 115px) calc(50vh + 35px),var(--vert) 1%, rgba(0,0,0,0) 72%);
     }
 }

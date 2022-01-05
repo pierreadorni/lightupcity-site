@@ -14,7 +14,7 @@ function LandingSection() {
       </div>
       <img src={pieuvre} alt="pieuvre" id="pieuvre" />
       <img src={lune} alt="lune" id="lune" />
-      <img src={logo} alt="logo de compiègne en lumière" />
+      <img src={logo} alt="logo de compiègne en lumière" id="logo" />
       <LandingFooter />
     </div>
   )
