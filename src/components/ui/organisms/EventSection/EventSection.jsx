@@ -4,7 +4,8 @@ import './eventSection.css'
 function EventSection() {
   return (
     <div className="event-section">
-      <h1> This is the Event Section !</h1>
+      <h1>Prochainement...</h1>
+      <h2>découvrez l&#39;évènement du siècle !</h2>
     </div>
   )
 }

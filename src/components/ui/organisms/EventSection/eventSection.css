@@ -8,8 +8,14 @@
     justify-content: center;
 }
 
-.event-section h1{
+.event-section h1, .event-section h2{
     color: white;
     font-family: Sura, sans-serif;
     max-width: 80%;
+    line-height: 1;
+    margin-top: 0;
+}
+
+.event-section h2{
+    color: var(--vert);
 }
