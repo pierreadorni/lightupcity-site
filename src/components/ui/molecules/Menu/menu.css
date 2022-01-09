@@ -1,3 +1,4 @@
+
 .menu-content{
     position:fixed;
     top:0;
@@ -8,6 +9,8 @@
     z-index:1;
     display:none;
     flex-direction: row;
+    overscroll-behavior: contain;
+    overflow: auto;
 }
 
 .menu-left{
@@ -50,10 +53,10 @@
 
 .menu-content h3{
     color: var(--rouge);
-    font-family: Sura, sans-serif;
+    font-family: Raleway, Sura, sans-serif;
     text-align: left;
     width: 150px;
-    text-decoration: underline;
+    text-decoration: none;
     text-decoration-color: white;
     line-height:0;
     margin:0;

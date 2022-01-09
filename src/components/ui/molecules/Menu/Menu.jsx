@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-scroll'
 import './menu.css'
+import disableScroll from 'disable-scroll'
+
 import MenuBurger from '../../atoms/MenuBurger/MenuBurger'
 
 const order = ['landing', 'event']
@@ -16,6 +18,14 @@ function Menu() {
   useEffect(() => {
     window.addEventListener('scroll', handleScroll)
   }, [])
+
+  useEffect(() => {
+    if (open) {
+      disableScroll.on()
+    } else {
+      disableScroll.off()
+    }
+  }, [open])
 
   return (
     <div>
