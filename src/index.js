@@ -6,7 +6,7 @@ import Home from './components/pages/home/Home'
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/lightupcity">
       <Routes>
         <Route path="/" exact element={<Home />} />
       </Routes>
