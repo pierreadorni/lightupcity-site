@@ -1,0 +1,19 @@
+.jellyfish-video-frame{
+    border: 1px solid var(--vert);
+    width: 100%;
+    max-width: 100px;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.jellyfish-video{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: 100%;
+    background-size: cover;
+}
