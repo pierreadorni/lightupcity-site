@@ -7,6 +7,24 @@
     justify-content: center;
 }
 
+.lien-billetterie{
+    position: absolute;
+    top: 75%;
+}
+
+.bouton-billetterie{
+
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    border: 2px solid var(--vert);
+    background-color: rgba(0,0,0,0.1);
+    font-family: Raleway, Sura, sans-serif;
+    font-weight: 700;
+    color: var(--vert);
+    backdrop-filter: blur(1px);
+}
+
 .star-glow-wrap{
     position: absolute;
     animation: glow 10s infinite ease-in-out;

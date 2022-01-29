@@ -15,6 +15,12 @@ function LandingSection() {
       <img src={pieuvre} alt="pieuvre" id="pieuvre" />
       <img src={lune} alt="lune" id="lune" />
       <img src={logo} alt="logo de compiègne en lumière" id="logo" />
+      <a href="/lightupcity" className="lien-billetterie">
+        <button type="button" className="bouton-billetterie">
+          Billetterie
+        </button>
+      </a>
+
       <LandingFooter />
     </div>
   )
