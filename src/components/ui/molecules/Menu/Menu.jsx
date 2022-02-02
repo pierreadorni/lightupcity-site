@@ -10,14 +10,26 @@ const order = ['landing', 'event']
 function Menu() {
   const [open, setOpen] = useState(false)
   const [active, setActive] = useState('landing')
-
-  const handleScroll = () => {
-    setActive(order[Math.floor((window.scrollY + 10) / window.innerHeight)])
-  }
+  const [lastScroll, setLastScroll] = useState(-1.0)
+  const [shown, setShown] = useState(true)
 
   useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > lastScroll) {
+        setShown(false)
+      } else {
+        setShown(true)
+      }
+      setLastScroll(window.scrollY)
+      if (
+        order[Math.floor((window.scrollY + 10) / window.innerHeight)] !== active
+      ) {
+        setActive(order[Math.floor((window.scrollY + 10) / window.innerHeight)])
+      }
+    }
+    window.removeEventListener('scroll', handleScroll)
     window.addEventListener('scroll', handleScroll)
-  }, [])
+  }, [lastScroll])
 
   useEffect(() => {
     if (open) {
@@ -29,7 +41,7 @@ function Menu() {
 
   return (
     <div>
-      <MenuBurger open={open} onClick={() => setOpen(!open)} />
+      <MenuBurger open={open} onClick={() => setOpen(!open)} shown={shown} />
       <div className={`menu-content${open ? ' visible' : ''}`}>
         <div className="menu-left">
           <Link
