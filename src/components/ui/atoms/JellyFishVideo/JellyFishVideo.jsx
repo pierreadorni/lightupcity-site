@@ -8,7 +8,14 @@ function JellyFishVideo() {
   }, [])
   return (
     <div className="jellyfish-video-frame">
-      <video src={jellyfish} className="jellyfish-video" loop autoPlay muted>
+      <video
+        src={jellyfish}
+        className="jellyfish-video"
+        loop
+        autoPlay
+        muted
+        playsInline
+      >
         <track kind="captions" />
       </video>
     </div>
