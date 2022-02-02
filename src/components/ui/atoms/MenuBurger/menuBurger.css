@@ -1,6 +1,12 @@
 .menu-burger{
     position: fixed;
-    top: 20px;
+    top: -50px;
     left: 20px;
     z-index: 2;
+    transition: top 0.1s linear;
+}
+
+.shown{
+    top: 20px!important;
+    transition: top 0.1s linear;
 }
