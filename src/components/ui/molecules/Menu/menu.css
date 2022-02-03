@@ -45,10 +45,19 @@
 }
 
 .one{
-    top: calc(50vh - 30px);
+    top: calc(50vh - 110px);
 }
 .two{
-    top: calc(50vh + 20px);
+    top: calc(50vh - 60px);
+}
+.three{
+    top: calc(50vh - 10px);
+}
+.four{
+    top: calc(50vh + 40px);
+}
+.five{
+    top: calc(50vh + 90px);
 }
 
 .menu-content h3{

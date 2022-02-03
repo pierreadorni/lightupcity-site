@@ -5,7 +5,7 @@ import disableScroll from 'disable-scroll'
 
 import MenuBurger from '../../atoms/MenuBurger/MenuBurger'
 
-const order = ['landing', 'event']
+const order = ['landing', 'event', 'map', 'show', 'bar']
 
 function Menu() {
   const [open, setOpen] = useState(false)
@@ -72,6 +72,57 @@ function Menu() {
               L&apos;évènement
             </h3>
           </Link>
+          <Link
+            activeClass="active"
+            to="map-section"
+            spy
+            smooth
+            offset={0}
+            duration={500}
+            onClick={() => setOpen(false)}
+          >
+            <h3
+              className={`${
+                order.indexOf(active) >= order.indexOf('map') ? 'actif' : ''
+              }`}
+            >
+              Le Parcours
+            </h3>
+          </Link>
+          <Link
+            activeClass="active"
+            to="show-section"
+            spy
+            smooth
+            offset={0}
+            duration={500}
+            onClick={() => setOpen(false)}
+          >
+            <h3
+              className={`${
+                order.indexOf(active) >= order.indexOf('show') ? 'actif' : ''
+              }`}
+            >
+              Le Concert
+            </h3>
+          </Link>
+          <Link
+            activeClass="active"
+            to="bar-section"
+            spy
+            smooth
+            offset={0}
+            duration={500}
+            onClick={() => setOpen(false)}
+          >
+            <h3
+              className={`${
+                order.indexOf(active) >= order.indexOf('bar') ? 'actif' : ''
+              }`}
+            >
+              Le Bar
+            </h3>
+          </Link>
         </div>
         <div className="menu-right">
           <svg height="16" width="16" className="circle one">
@@ -99,6 +150,87 @@ function Menu() {
               r="8"
               fill={`${
                 order.indexOf(active) >= order.indexOf('event')
+                  ? '#02FEB0'
+                  : '#EF767A'
+              }`}
+            />
+          </svg>
+          <svg height="60" width="11" className="bar two">
+            <line
+              x1="0"
+              y1="0"
+              x2="0"
+              y2="60"
+              style={{
+                stroke:
+                  order.indexOf(active) >= order.indexOf('map')
+                    ? '#02FEB0'
+                    : '#EF767A',
+                strokeWidth: 11,
+              }}
+            />
+          </svg>
+          <svg height="16" width="16" className="circle three">
+            <circle
+              cx="8"
+              cy="8"
+              r="8"
+              fill={`${
+                order.indexOf(active) >= order.indexOf('map')
+                  ? '#02FEB0'
+                  : '#EF767A'
+              }`}
+            />
+          </svg>
+          <svg height="60" width="11" className="bar three">
+            <line
+              x1="0"
+              y1="0"
+              x2="0"
+              y2="60"
+              style={{
+                stroke:
+                  order.indexOf(active) >= order.indexOf('show')
+                    ? '#02FEB0'
+                    : '#EF767A',
+                strokeWidth: 11,
+              }}
+            />
+          </svg>
+          <svg height="16" width="16" className="circle four">
+            <circle
+              cx="8"
+              cy="8"
+              r="8"
+              fill={`${
+                order.indexOf(active) >= order.indexOf('show')
+                  ? '#02FEB0'
+                  : '#EF767A'
+              }`}
+            />
+          </svg>
+          <svg height="60" width="11" className="bar four">
+            <line
+              x1="0"
+              y1="0"
+              x2="0"
+              y2="60"
+              style={{
+                stroke:
+                  order.indexOf(active) >= order.indexOf('bar')
+                    ? '#02FEB0'
+                    : '#EF767A',
+                strokeWidth: 11,
+              }}
+            />
+          </svg>
+          <svg height="16" width="16" className="circle five">
+            <circle
+              cx="8"
+              cy="8"
+              r="8"
+              fill={`${
+                order.indexOf(active) >= order.indexOf('bar')
                   ? '#02FEB0'
                   : '#EF767A'
               }`}
