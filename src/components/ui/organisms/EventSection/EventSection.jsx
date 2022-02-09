@@ -6,7 +6,7 @@ import JellyFishVideo from '../../atoms/JellyFishVideo/JellyFishVideo'
 function EventSection() {
   return (
     <div className="event-section">
-      <div className="event-section-title">
+      <div className="section-title">
         <h1>L&#39;évènement</h1>
       </div>
       <div className="event-section-content">

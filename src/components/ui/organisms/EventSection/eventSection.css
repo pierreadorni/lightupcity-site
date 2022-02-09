@@ -16,7 +16,7 @@
     justify-content: flex-start;
     margin-bottom:0;
 }
-.event-section-title h1{
+.section-title h1{
     color: var(--vert);
     text-align: left;
     line-height: 1em;
