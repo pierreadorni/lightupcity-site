@@ -1,6 +1,27 @@
-.MapSection{
+.map-section{
     height: 100vh;
     width: 100%;
     margin-top: 0;
-    background-color: var(--bleu);
+    background-color: var(--noir);
+    display: flex;
+    flex-direction: column;
+}
+
+.map-description{
+    flex: 1;
+    text-align: center;
+    color: white;
+    font-family: Raleway, Sura, sans-serif;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.map-image{
+    flex: 8;
+    padding: 30px;
+}
+
+.fake-map{
+    border: 1px solid var(--vert);
+    height: 100%;
 }
