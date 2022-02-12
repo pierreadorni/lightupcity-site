@@ -1,12 +1,19 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { HiLocationMarker, HiCalendar } from 'react-icons/hi'
 import './infosSection.css'
 
 function InfosSection() {
+  const [width, setWidth] = useState(window.innerWidth)
+  useEffect(() => {
+    function handleResize() {
+      setWidth(window.innerWidth)
+    }
+    window.addEventListener('resize', handleResize)
+  }, [])
   return (
     <div className="infos-section">
       <div className="progressbar">
-        {[...Array(40)].map(() => (
+        {[...Array(Math.round(width / 28))].map(() => (
           <svg className="progressbar-stripe">
             <defs>
               <filter id="f1" x="0" y="0">
@@ -33,7 +40,7 @@ function InfosSection() {
         </div>
       </div>
       <div className="progressbar">
-        {[...Array(40)].map(() => (
+        {[...Array(Math.round(width / 28))].map(() => (
           <svg className="progressbar-stripe">
             <defs>
               <filter id="f1" x="0" y="0">
