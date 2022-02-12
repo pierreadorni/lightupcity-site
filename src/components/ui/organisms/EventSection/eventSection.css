@@ -35,7 +35,7 @@
     flex:4;
     flex-direction:row;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     width: 100%;
 }
 
@@ -56,10 +56,8 @@
 
 .jellyfish-video-container{
     flex:1;
-    height: 80%;
     padding: 20px;
-    display: flex;
-    justify-content: flex-start;
+    display: block;
 }
 
 .event-description p {
