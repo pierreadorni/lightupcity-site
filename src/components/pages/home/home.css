@@ -1,0 +1,9 @@
+.main-div{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+}
+html{
+    margin: 0;
+}

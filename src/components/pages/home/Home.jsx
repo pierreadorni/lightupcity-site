@@ -7,7 +7,7 @@ import Menu from '../../ui/molecules/Menu/Menu'
 
 function Home() {
   return (
-    <div>
+    <div className="main-div">
       <Menu />
       <LandingSection />
       <EventSection />
