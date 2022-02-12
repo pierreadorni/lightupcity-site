@@ -3,7 +3,7 @@
     background-color: var(--noir);
 
     width: calc(100% - 2px);
-    padding-top:1px;
+    padding-top:0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -20,6 +20,13 @@
     box-shadow: 0px 0px 10px 1px var(--vert);
 }
 
+.progressbar:first-child{
+    transform: translateY(-1px);
+}
+.progressbar:last-child{
+    transform: translateY(1px);
+}
+
 .progressbar-stripe{
     width: 30px;
     animation: translate 1s infinite linear;
@@ -32,7 +39,7 @@
 .progressbar-stripe polygon{
     fill: var(--vert);
     transform:  translate(10px, 0px) rotate(30deg);
-    box-shadow: 0px 0px 10px 1px var(--vert);
+
 }
 
 .infos-section-content{
@@ -52,6 +59,10 @@
     align-items: center;
     justify-content: flex-start;
     text-align: center;
+}
+
+.infos-section-svg{
+    filter: drop-shadow(0px 0px 20px var(--vert));
 }
 
 @keyframes translate{

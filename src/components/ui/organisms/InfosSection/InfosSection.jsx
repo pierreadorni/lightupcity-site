@@ -19,14 +19,14 @@ function InfosSection() {
       </div>
       <div className="infos-section-content">
         <div className="info">
-          <HiLocationMarker size={40} />
+          <HiLocationMarker size={40} className="infos-section-svg" />
           <p>
             Rue Roger Couttolenc,
             <br /> Compiègne
           </p>
         </div>
         <div className="info">
-          <HiCalendar size={40} />
+          <HiCalendar size={40} className="infos-section-svg" />
           <p>
             Samedi 26 février, <br /> 20h
           </p>
