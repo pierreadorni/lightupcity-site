@@ -1,6 +1,9 @@
 import React from 'react'
-import './mapSection.css'
 import LoremIpsum from 'react-lorem-ipsum'
+import Map from 'react-map-gl'
+
+import './mapSection.css'
+import 'mapbox-gl/dist/mapbox-gl.css'
 
 function MapSection() {
   return (
@@ -12,7 +15,16 @@ function MapSection() {
         <LoremIpsum avgSentencesPerParagraph={2} />
       </div>
       <div className="map-image">
-        <div className="fake-map" />
+        <Map
+          initialViewState={{
+            longitude: 2.820628,
+            latitude: 49.416674,
+            zoom: 17,
+          }}
+          // style={{ width: 600, height: 400 }}
+          mapStyle="mapbox://styles/pierreadorni/ckzigus8x001t15p18h3bvuqw"
+        />
+        {/* <div className="fake-map" /> */}
       </div>
     </div>
   )
