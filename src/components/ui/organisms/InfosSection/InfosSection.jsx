@@ -13,7 +13,7 @@ function InfosSection() {
   return (
     <div className="infos-section">
       <div className="progressbar">
-        {[...Array(Math.round(width / 28))].map(() => (
+        {[...Array(Math.round(width / 25))].map(() => (
           <svg className="progressbar-stripe">
             <defs>
               <filter id="f1" x="0" y="0">
@@ -35,12 +35,12 @@ function InfosSection() {
         <div className="info">
           <HiCalendar size={40} className="infos-section-svg" />
           <p>
-            Samedi 26 février, <br /> 20h
+            Samedi 26 février, <br /> 18h
           </p>
         </div>
       </div>
       <div className="progressbar">
-        {[...Array(Math.round(width / 28))].map(() => (
+        {[...Array(Math.round(width / 25))].map(() => (
           <svg className="progressbar-stripe">
             <defs>
               <filter id="f1" x="0" y="0">
