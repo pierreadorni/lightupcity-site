@@ -8,12 +8,10 @@
 }
 
 .lien-billetterie{
-    position: absolute;
-    top: 75%;
+    z-index: 2;
 }
 
 .bouton-billetterie{
-
     width: 150px;
     height: 30px;
     border-radius: 10px;
@@ -34,7 +32,7 @@
     height: 100vh;
     width: 100vw;
     opacity: 0.3;
-    background: radial-gradient(circle at calc(50vw + 90px) calc(50vh + 30px),var(--vert) 1%, rgba(0,0,0,0) 72%);
+    background: radial-gradient(circle at 80vw 43vh,var(--vert) 1%, rgba(0,0,0,0) 72%);
 }
 
 .star-glow{
@@ -42,20 +40,32 @@
     height: 100vh;
     width: 100vw;
     opacity: 0.8;
-    background: radial-gradient(circle at calc(50vw + 90px) calc(50vh + 30px),var(--vert) 1%, rgba(0,0,0,0) 5%);
+    background: radial-gradient(circle at 80vw 43vh,var(--vert) 1%, rgba(0,0,0,0) 5%);
 }
 
 #pieuvre{
     position: absolute;
-    top: 70vh;
+    top: 50vh;
     left: 10vw;
     animation: squid-hover 10s infinite ease-in-out;
 }
 
 #lune{
     position: absolute;
-    top: 5vh;
+    top: 1vh;
     left: calc(80vw - 100px);
+}
+
+#logo{
+    z-index: 1;
+    width: 80vw;
+    -webkit-transform: translate3d(0,0,0);
+}
+#date-heure{
+    width: 70vw;
+    z-index: 2;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 
 @keyframes glow {
@@ -97,9 +107,13 @@
         width: 300px;
     }
     .star-glow{
-        background: radial-gradient(circle at calc(50vw + 115px) calc(50vh + 35px),var(--vert) 1%, rgba(0,0,0,0) 5%);
+        background: radial-gradient(circle at calc(50vw + 115px) 43vh,var(--vert) 1%, rgba(0,0,0,0) 5%);
     }
     .star-glow-wide{
-        background: radial-gradient(circle at calc(50vw + 115px) calc(50vh + 35px),var(--vert) 1%, rgba(0,0,0,0) 72%);
+        background: radial-gradient(circle at calc(50vw) 43vh,var(--vert) 1%, rgba(0,0,0,0) 72%);
+    }
+    #date-heure{
+        width: 300px;
+        z-index: 2;
     }
 }

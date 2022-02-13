@@ -1,6 +1,7 @@
 .section-footer{
     position: absolute;
-    top: calc(100vh - 130px);
+    z-index: 2;
+    top: calc(100vh - 150px);
     height: 130px;
     display: flex;
     flex-direction: column;
@@ -28,19 +29,14 @@
     animation: hover 5s infinite linear;
 }
 
-.bottom-line{
-    width: 100vw;
-    height: 2px;
-}
-
 @keyframes hover{
     0%{
-        transform: translateY(-3px);
+        transform: translateY(-5px);
     }
     50%{
-        transform: translateY(+3px);
+        transform: translateY(+5px);
     }
     100%{
-        transform: translateY(-3px);
+        transform: translateY(-5px);
     }
 }

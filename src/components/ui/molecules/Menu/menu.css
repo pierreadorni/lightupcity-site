@@ -6,7 +6,7 @@
     height:100vh;
     width:100vw;
     background-color:rgba(0,0,0,0.8);
-    z-index:1;
+    z-index:3;
     display:none;
     flex-direction: row;
     overscroll-behavior: contain;
@@ -41,7 +41,7 @@
 .bar{
     position: absolute;
     left: 25px;
-    z-index:1;
+    z-index:;
 }
 
 .one{

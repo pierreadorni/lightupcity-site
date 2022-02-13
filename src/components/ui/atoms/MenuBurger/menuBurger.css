@@ -2,7 +2,7 @@
     position: fixed;
     top: -50px;
     left: 20px;
-    z-index: 2;
+    z-index: 4;
     transition: top 0.1s linear;
 }
 
