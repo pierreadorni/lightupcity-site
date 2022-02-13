@@ -11,6 +11,8 @@ import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import ArtistSlide from '../../molecules/ArtistSlide/ArtistSlide'
 
+import vickyr from '../../../../assets/lightup_vickyr.png'
+
 function ShowSection() {
   return (
     <div className="show-section" id="show-section">
@@ -29,8 +31,7 @@ function ShowSection() {
           >
             <SwiperSlide>
               <ArtistSlide
-                nom="johnny halliday"
-                image="https://static1.purepeople.com/articles/8/19/00/78/@/2420965-exclusif-johnny-hallyday-en-concert-a-opengraph_1200-2.jpg"
+                image={vickyr}
                 insta="https://www.instagram.com/jhallyday/"
                 fb="https://fr-fr.facebook.com/jhofficiel"
               />

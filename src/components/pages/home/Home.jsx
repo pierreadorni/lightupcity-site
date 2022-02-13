@@ -14,9 +14,9 @@ function Home() {
       <Menu />
       <LandingSection />
       <EventSection />
-      <MapSection />
       <ShowSection />
       <BarSection />
+      <MapSection />
       <Footer />
     </div>
   )
