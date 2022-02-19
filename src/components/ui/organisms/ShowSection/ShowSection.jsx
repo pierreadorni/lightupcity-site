@@ -11,7 +11,8 @@ import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import ArtistSlide from '../../molecules/ArtistSlide/ArtistSlide'
 
-import vickyr from '../../../../assets/lightup_vickyr.png'
+import vickyr from '../../../../assets/vickyr.png'
+import mb14 from '../../../../assets/mb14.png'
 
 function ShowSection() {
   return (
@@ -32,32 +33,15 @@ function ShowSection() {
             <SwiperSlide>
               <ArtistSlide
                 image={vickyr}
-                insta="https://www.instagram.com/jhallyday/"
-                fb="https://fr-fr.facebook.com/jhofficiel"
+                insta="https://www.instagram.com/iamvickyr_/"
+                fb="https://www.facebook.com/iamvickr"
               />
             </SwiperSlide>
             <SwiperSlide>
               <ArtistSlide
-                nom="jacques brel"
-                image="https://www.rts.ch/2018/10/07/11/34/9861346.image?w=1280&h=720"
-                insta="https://www.instagram.com/_jacquesbrel_/?hl=en"
-                fb="https://www.facebook.com/JacquesBrelOfficiel"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <ArtistSlide
-                nom="georges brassens"
-                image="https://www.paris-friendly.fr/images/bons_plans_paris/1210/journees-georges-brassens.jpg"
-                insta="https://www.instagram.com/georgesbrassensofficiel/?hl=en"
-                fb="https://www.facebook.com/brassens.officiel"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <ArtistSlide
-                nom="charles aznavour"
-                image="https://cdn.radiofrance.fr/s3/cruiser-production/2018/10/0e591ebe-319d-4fbf-ace9-286f029f7e96/560x315_aznavour_france_musique_nuit_archives_.jpg"
-                fb="https://www.facebook.com/aznavourofficiel/"
-                insta="https://www.instagram.com/aznavourfoundation/"
+                image={mb14}
+                insta="https://www.instagram.com/mb14beatbox/"
+                fb="https://www.facebook.com/mb14beatbox/"
               />
             </SwiperSlide>
           </Swiper>
