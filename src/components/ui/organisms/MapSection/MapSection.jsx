@@ -278,7 +278,6 @@ function MapSection() {
             </div>
           ))}
         </Map>
-        ;
       </div>
     </div>
   )

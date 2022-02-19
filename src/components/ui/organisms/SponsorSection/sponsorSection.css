@@ -1,0 +1,20 @@
+.sponsor img{
+    max-width: 200px;
+}
+
+.sponsor{
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.sponsors-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 20px;
+    gap: 20px;
+}

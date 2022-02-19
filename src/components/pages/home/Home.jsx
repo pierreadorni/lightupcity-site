@@ -4,6 +4,7 @@ import LandingSection from '../../ui/organisms/LandingSection/LandingSection'
 import EventSection from '../../ui/organisms/EventSection/EventSection'
 import MapSection from '../../ui/organisms/MapSection/MapSection'
 import ShowSection from '../../ui/organisms/ShowSection/ShowSection'
+import SponsorSection from '../../ui/organisms/SponsorSection/SponsorSection'
 // import BarSection from '../../ui/organisms/BarSection/BarSection'
 import Menu from '../../ui/molecules/Menu/Menu'
 import Footer from '../../ui/molecules/Footer/Footer'
@@ -17,6 +18,7 @@ function Home() {
       <ShowSection />
       {/* <BarSection /> */}
       <MapSection />
+      <SponsorSection />
       <Footer />
     </div>
   )
