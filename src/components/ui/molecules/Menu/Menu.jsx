@@ -5,7 +5,7 @@ import disableScroll from 'disable-scroll'
 
 import MenuBurger from '../../atoms/MenuBurger/MenuBurger'
 
-const order = ['landing', 'event', 'map', 'show', 'bar']
+const order = ['landing', 'event', 'show', 'map', 'bar', 'sponsor']
 
 function Menu() {
   const [open, setOpen] = useState(false)
@@ -74,23 +74,6 @@ function Menu() {
           </Link>
           <Link
             activeClass="active"
-            to="map-section"
-            spy
-            smooth
-            offset={0}
-            duration={500}
-            onClick={() => setOpen(false)}
-          >
-            <h3
-              className={`${
-                order.indexOf(active) >= order.indexOf('map') ? 'actif' : ''
-              }`}
-            >
-              Le Parcours
-            </h3>
-          </Link>
-          <Link
-            activeClass="active"
             to="show-section"
             spy
             smooth
@@ -108,7 +91,7 @@ function Menu() {
           </Link>
           <Link
             activeClass="active"
-            to="bar-section"
+            to="map-section"
             spy
             smooth
             offset={0}
@@ -117,10 +100,44 @@ function Menu() {
           >
             <h3
               className={`${
-                order.indexOf(active) >= order.indexOf('bar') ? 'actif' : ''
+                order.indexOf(active) >= order.indexOf('map') ? 'actif' : ''
               }`}
             >
-              Le Bar
+              Le Parcours
+            </h3>
+          </Link>
+          {/* <Link */}
+          {/*   activeClass="active" */}
+          {/*   to="bar-section" */}
+          {/*   spy */}
+          {/*   smooth */}
+          {/*   offset={0} */}
+          {/*   duration={500} */}
+          {/*   onClick={() => setOpen(false)} */}
+          {/* > */}
+          {/*   <h3 */}
+          {/*     className={`${ */}
+          {/*       order.indexOf(active) >= order.indexOf('bar') ? 'actif' : '' */}
+          {/*     }`} */}
+          {/*   > */}
+          {/*     Le Bar */}
+          {/*   </h3> */}
+          {/* </Link> */}
+          <Link
+            activeClass="active"
+            to="sponsor-section"
+            spy
+            smooth
+            offset={0}
+            duration={500}
+            onClick={() => setOpen(false)}
+          >
+            <h3
+              className={`${
+                order.indexOf(active) >= order.indexOf('sponsor') ? 'actif' : ''
+              }`}
+            >
+              Nos Partenaires
             </h3>
           </Link>
         </div>
@@ -163,7 +180,7 @@ function Menu() {
               y2="60"
               style={{
                 stroke:
-                  order.indexOf(active) >= order.indexOf('map')
+                  order.indexOf(active) >= order.indexOf('show')
                     ? '#02FEB0'
                     : '#EF767A',
                 strokeWidth: 11,
@@ -176,7 +193,7 @@ function Menu() {
               cy="8"
               r="8"
               fill={`${
-                order.indexOf(active) >= order.indexOf('map')
+                order.indexOf(active) >= order.indexOf('show')
                   ? '#02FEB0'
                   : '#EF767A'
               }`}
@@ -190,7 +207,7 @@ function Menu() {
               y2="60"
               style={{
                 stroke:
-                  order.indexOf(active) >= order.indexOf('show')
+                  order.indexOf(active) >= order.indexOf('map')
                     ? '#02FEB0'
                     : '#EF767A',
                 strokeWidth: 11,
@@ -203,7 +220,7 @@ function Menu() {
               cy="8"
               r="8"
               fill={`${
-                order.indexOf(active) >= order.indexOf('show')
+                order.indexOf(active) >= order.indexOf('map')
                   ? '#02FEB0'
                   : '#EF767A'
               }`}
@@ -217,7 +234,7 @@ function Menu() {
               y2="60"
               style={{
                 stroke:
-                  order.indexOf(active) >= order.indexOf('bar')
+                  order.indexOf(active) >= order.indexOf('sponsor')
                     ? '#02FEB0'
                     : '#EF767A',
                 strokeWidth: 11,
@@ -230,7 +247,7 @@ function Menu() {
               cy="8"
               r="8"
               fill={`${
-                order.indexOf(active) >= order.indexOf('bar')
+                order.indexOf(active) >= order.indexOf('sponsor')
                   ? '#02FEB0'
                   : '#EF767A'
               }`}
