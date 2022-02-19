@@ -1,7 +1,6 @@
 import React from 'react'
-// import { LoremIpsum } from 'react-lorem-ipsum'
 import './eventSection.css'
-// import JellyFishVideo from '../../atoms/JellyFishVideo/JellyFishVideo'
+import timeline from '../../../../assets/timeline.png'
 
 function EventSection() {
   return (
@@ -25,7 +24,9 @@ function EventSection() {
             animée, sur le thème de la musique et de la lumière. Nous vous
             attendons avec impatience !
           </p>
+          <img src={timeline} alt="" className="timeline" />
         </div>
+
         {/* <div className="jellyfish-video-container"> */}
         {/*   <JellyFishVideo /> */}
         {/* </div> */}
