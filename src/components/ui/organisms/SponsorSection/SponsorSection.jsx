@@ -1,5 +1,6 @@
 import React from 'react'
 import './sponsorSection.css'
+import stCorneille from '../../../../assets/st_corneille.jpg'
 
 function SponsorSection() {
   return (
@@ -14,10 +15,7 @@ function SponsorSection() {
             target="_blank"
             rel="noreferrer"
           >
-            <img
-              src="http://www.epicerie-saint-corneille.com/files/logo-st-corneille_1b4238a8ea76843cf1363da8e90a10f4.jpg"
-              alt="épicerie saint corneille"
-            />
+            <img src={stCorneille} alt="épicerie saint corneille" />
           </a>
         </div>
         <div className="sponsor">
