@@ -23,8 +23,7 @@ mapboxgl.workerClass =
   require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default
 
 const Map = ReactMapboxGl({
-  accessToken:
-    'pk.eyJ1IjoicGllcnJlYWRvcm5pIiwiYSI6ImNremlnc3BnajFuamEyd3BkdW53dzd6b3EifQ.uts3swN49jvmEPOf29Di9w',
+  accessToken: process.env.REACT_APP_MAPBOX_ACCESS_TOKEN,
 })
 
 const geoJson = [
