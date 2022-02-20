@@ -29,7 +29,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex: 8;
+    flex: 1;
 }
 
 .event-section-top{
@@ -44,7 +44,7 @@
 .event-section-bottom{
     width: 100%;
     display: flex;
-    flex:4;
+    flex:1;
     align-items: center;
     justify-content: center;
 }

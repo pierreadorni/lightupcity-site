@@ -15,7 +15,8 @@ import './mapSection.css'
 import 'mapbox-gl/dist/mapbox-gl.css'
 
 const Map = ReactMapboxGl({
-  accessToken: process.env.REACT_APP_MAPBOX_ACCESS_TOKEN,
+  accessToken:
+    'pk.eyJ1IjoicGllcnJlYWRvcm5pIiwiYSI6ImNremlnc3BnajFuamEyd3BkdW53dzd6b3EifQ.uts3swN49jvmEPOf29Di9w',
 })
 
 const geoJson = [
