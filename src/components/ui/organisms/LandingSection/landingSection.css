@@ -11,6 +11,11 @@
     z-index: 2;
 }
 
+.ticketing-label{
+    color: var(--vert);
+    font-family: Raleway Sura, sans-serif;
+}
+
 .bouton-billetterie{
     width: 150px;
     height: 30px;
@@ -32,7 +37,7 @@
     height: 100vh;
     width: 100vw;
     opacity: 0.3;
-    background: radial-gradient(circle at 80vw 43vh,var(--vert) 1%, rgba(0,0,0,0) 72%);
+    background: radial-gradient(circle at 80vw 40vh,var(--vert) 1%, rgba(0,0,0,0) 72%);
 }
 
 .star-glow{
@@ -40,7 +45,7 @@
     height: 100vh;
     width: 100vw;
     opacity: 0.8;
-    background: radial-gradient(circle at 80vw 43vh,var(--vert) 1%, rgba(0,0,0,0) 5%);
+    background: radial-gradient(circle at 80vw 40vh,var(--vert) 1%, rgba(0,0,0,0) 5%);
 }
 
 #pieuvre{
@@ -107,10 +112,10 @@
         width: 300px;
     }
     .star-glow{
-        background: radial-gradient(circle at calc(50vw + 115px) 43vh,var(--vert) 1%, rgba(0,0,0,0) 5%);
+        background: radial-gradient(circle at calc(50vw + 115px) 37vh,var(--vert) 1%, rgba(0,0,0,0) 5%);
     }
     .star-glow-wide{
-        background: radial-gradient(circle at calc(50vw) 43vh,var(--vert) 1%, rgba(0,0,0,0) 72%);
+        background: radial-gradient(circle at calc(50vw + 115px) 37vh,var(--vert) 1%, rgba(0,0,0,0) 72%);
     }
     #date-heure{
         width: 300px;
