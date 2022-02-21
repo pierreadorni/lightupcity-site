@@ -1,17 +1,15 @@
 .artist-slide{
-    width: 375px;
-    max-width: 375px;
-    height: 200px;
-
+    max-width: 500px;
+    height: fit-content;
+    min-height: 200px;
     overflow: hidden;
     position: relative;
 }
 
 .artist-image{
-    height: calc(100% - 2px);
     width: calc(100% - 2px);
-    position: absolute;
-    top: 1px;
+    /* position: absolute;
+    top: 1px; */
 
     z-index: -1;
 }

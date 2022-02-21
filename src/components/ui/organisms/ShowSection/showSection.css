@@ -6,9 +6,9 @@
 }
 
 .swiper-container{
-    width: calc(100%- 1px);
-    max-width: 375px;
-    height: 200px;
+    width: calc(100% - 1px);
+    max-width: 500px;
+    /* height: 200px; */
 }
 
 .swiper-metacontainer{
