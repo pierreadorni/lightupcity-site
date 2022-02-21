@@ -241,50 +241,54 @@ function MapSection() {
           ici, quelques animations en avant première :
         </p>
       </div>
-      <div className="map-image">
-        {/* eslint-disable react/style-prop-object */}
-        <Map
-          style="mapbox://styles/pierreadorni/ckzigus8x001t15p18h3bvuqw"
-          containerStyle={{
-            height: '100%',
-            width: '100%',
-          }}
-          center={center}
-          zoom={[16]}
-        >
-          {geoJson.map((feature) => (
-            <div>
-              <Marker
-                coordinates={feature.geometry.coordinates}
-                anchor="center"
-                text={feature}
-                onClick={() => {
-                  if (popup === feature.properties['anim-name']) {
-                    setPopup('')
-                  } else {
-                    setPopup(feature.properties['anim-name'])
-                  }
-                }}
-              >
-                <img src={pins[feature.properties['marker-symbol']]} alt="" />
-              </Marker>
-              <Popup
-                coordinates={feature.geometry.coordinates}
-                offset={{
-                  'bottom-left': [12, -38],
-                  bottom: [0, -38],
-                  'bottom-right': [-12, -38],
-                }}
-                style={{
-                  display:
-                    popup === feature.properties['anim-name'] ? 'flex' : 'none',
-                }}
-              >
-                <h2>{feature.properties['anim-name']}</h2>
-              </Popup>
-            </div>
-          ))}
-        </Map>
+      <div className="map-metacontainer">
+        <div className="map-container">
+          {/* eslint-disable react/style-prop-object */}
+          <Map
+            style="mapbox://styles/pierreadorni/ckzigus8x001t15p18h3bvuqw"
+            containerStyle={{
+              height: '100%',
+              width: '100%',
+            }}
+            center={center}
+            zoom={[16]}
+          >
+            {geoJson.map((feature) => (
+              <div>
+                <Marker
+                  coordinates={feature.geometry.coordinates}
+                  anchor="center"
+                  text={feature}
+                  onClick={() => {
+                    if (popup === feature.properties['anim-name']) {
+                      setPopup('')
+                    } else {
+                      setPopup(feature.properties['anim-name'])
+                    }
+                  }}
+                >
+                  <img src={pins[feature.properties['marker-symbol']]} alt="" />
+                </Marker>
+                <Popup
+                  coordinates={feature.geometry.coordinates}
+                  offset={{
+                    'bottom-left': [12, -38],
+                    bottom: [0, -38],
+                    'bottom-right': [-12, -38],
+                  }}
+                  style={{
+                    display:
+                      popup === feature.properties['anim-name']
+                        ? 'flex'
+                        : 'none',
+                  }}
+                >
+                  <h2>{feature.properties['anim-name']}</h2>
+                </Popup>
+              </div>
+            ))}
+          </Map>
+        </div>
       </div>
     </div>
   )

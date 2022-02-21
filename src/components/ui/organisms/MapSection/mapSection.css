@@ -16,9 +16,15 @@
     margin-right: 10px;
 }
 
-.map-image{
+
+.map-metacontainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
     flex: 8;
-    padding: 30px;
+}
+.map-container{
+    width: 90%;
 }
 
 .marker{
