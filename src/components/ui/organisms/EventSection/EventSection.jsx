@@ -13,8 +13,8 @@ function EventSection() {
           <p>
             Cette année, le <b>samedi 26 février</b> aura lieu la 5ème édition
             de Compiègne en Lumière, un parcours lumineux et musical organisé
-            par 50 étudiant·e·s motivé·e·s de l&#39; Université Technologique de
-            Compiègne.{' '}
+            par 50 étudiant·e·s motivé·e·s de l&#39; Université de Technologie
+            de Compiègne.{' '}
             <b>
               Spectacles pyrotechniques, concerts, parcours lumineux, stands
               photos, fresques
