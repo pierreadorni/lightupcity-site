@@ -23,7 +23,10 @@ function LandingSection() {
           Billetterie
         </button>
       </a>
-      <p className="ticketing-label">Gratuit pour les -14 ans !</p>
+      <p className="ticketing-label">
+        Gratuit pour les -14 ans !<br />
+        (accompagnés d&#39;un adulte)
+      </p>
       <LandingFooter />
       <div className="star-glow-wrap">
         <div className="star-glow" />

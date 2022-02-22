@@ -14,6 +14,7 @@
 .ticketing-label{
     color: var(--vert);
     font-family: Raleway Sura, sans-serif;
+    text-align: center;
 }
 
 .bouton-billetterie{
